@@ -9,11 +9,11 @@ const parserMiddleware = express.json();
 app.use(parserMiddleware);
 
 
-app.get('', (req: Request, res: Response) => {
+app.get('/', (req: Request, res: Response) => {
     res.send('Hello world!')
 })
 
-app.use('/api/videos', videosRouters)
+// app.use('/api/videos', videosRouters)
 
 
 app.listen(PORT, () => {

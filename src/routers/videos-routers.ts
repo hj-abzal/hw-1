@@ -3,7 +3,7 @@ import {Router, Request, Response} from 'express';
 export const videosRouters = Router({});
 
 videosRouters.get('', (req: Request, res: Response) => {
-
+    res.send([])
 })
 
 videosRouters.post('', (req: Request, res: Response) => {
